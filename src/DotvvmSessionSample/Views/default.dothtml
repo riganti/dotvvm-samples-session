@@ -1,0 +1,14 @@
+﻿@viewModel DotvvmSessionSample.ViewModels.DefaultViewModel, DotvvmSessionSample
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+    <h1>Session test</h1>
+
+    <p>
+        Value: <dot:TextBox Text="{value: Value}" />
+    </p>
+
+    <dot:Button Text="Read from session" Click="{command: Read()}" />
+    <dot:Button Text="Write to session" Click="{command: Write()}" />
+
+</dot:Content>
