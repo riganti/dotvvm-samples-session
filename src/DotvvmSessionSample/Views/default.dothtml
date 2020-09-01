@@ -8,7 +8,20 @@
         Value: <dot:TextBox Text="{value: Value}" />
     </p>
 
-    <dot:Button Text="Read from session" Click="{command: Read()}" />
     <dot:Button Text="Write to session" Click="{command: Write()}" />
+    <dot:Button Text="Read from session" Click="{command: Read()}" />
+    
+    <p></p>
+    <dot:AuthenticatedView>
+        <NotAuthenticatedTemplate>
+            Logged out
+            <br />
+        </NotAuthenticatedTemplate>
+        <AuthenticatedTemplate>
+            Logged in
+        </AuthenticatedTemplate>
+    </dot:AuthenticatedView>
+
+    <p><a href="Login.aspx">Login / logout page</a></p>
 
 </dot:Content>
